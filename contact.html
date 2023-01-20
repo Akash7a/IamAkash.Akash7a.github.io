@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collage</title>
+    <link rel="stylesheet" href="./styles/1.css">
+    <!--google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Prosto+One&family=Roboto:wght@300;400;500&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!--bootstrap font awesome -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="1.html"><img src="./images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact US</h1>
+    </section>
+
+    <!-- contact us  -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636368.8471058826!2d78.61528228394045!3d27.120354290789432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39994e9f7b4a09d3%3A0xf6a5476d3617249d!2sUttar%20Pradesh!5e0!3m2!1sen!2sin!4v1673326231363!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="bi bi-house"></i>
+                    <span>ABS Road , XY Building</span>
+                    <p>Banglore, Karnataka, IN</p>
+                </div>
+                <div>
+                    <i class="bi bi-phone"></i>
+                    <span>
+                        <strong> +1 55435455645</strong>
+
+                    </span>
+                    <p>Monday to sunday, 10AM to 6PM</p>
+                </div>
+                <div>
+                    <i class="bi bi-envelope"></i>
+                    <span>
+                        <strong>info@avengers.com
+                        </strong>
+                    </span>
+                    <p>Email us your query</p>
+                </div>
+            </div>
+            <div class="contact-col">
+
+
+                <form action="">
+
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter email address">
+                    <input type="text" placeholder="Enter your subject">
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto consequatur nisi quisquam
+            dignissimos <br> ex vel est modi labore ducimus maiores dicta, odit molestias nemo laborum rerum. Suscipit,
+            ducimus architecto.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+
+        </div>
+        <p class="last">Made with <i class="bi bi-heart"></i>Akshay Kumar </p>
+    </section>
+
+    <!-- external javascript -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>

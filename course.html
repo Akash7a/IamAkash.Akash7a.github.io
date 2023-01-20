@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Collage</title>
+    <link rel="stylesheet" href="./styles/1.css">
+    <!--google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Prosto+One&family=Roboto:wght@300;400;500&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!--bootstrap font awesome -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- sub header -->
+    <section class="sub-header">
+        <nav>
+            <a href="1.html"><img src="./images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="1.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+
+    <!-- ---Courses---- -->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, tenetur atque accusamus porro
+                    repellendus facere exercitationem adipisci iste repudiandae dicta minima debitis animi id velit
+                    deserunt ducimus odit vero voluptate rerum dolores dolore est sapiente aliquid! Quasi optio quas
+                    accusantium.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, tenetur atque accusamus porro
+                    repellendus facere exercitationem adipisci iste repudiandae dicta minima debitis animi id velit
+                    deserunt ducimus odit vero voluptate rerum dolores dolore est sapiente aliquid! Quasi optio quas
+                    accusantium.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, tenetur atque accusamus porro
+                    repellendus facere exercitationem adipisci iste repudiandae dicta minima debitis animi id velit
+                    deserunt ducimus odit vero voluptate rerum dolores dolore est sapiente aliquid! Quasi optio quas
+                    accusantium.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- facilities -->
+
+    <!-- -- facilities-- -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="./images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Pellentesque aliquet turpis null.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./images/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Pellentesque aliquet turpis null.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./images/cafeteria.png" alt="">
+                <h3>Healthy Testy Food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Pellentesque aliquet turpis null.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto consequatur nisi quisquam
+            dignissimos <br> ex vel est modi labore ducimus maiores dicta, odit molestias nemo laborum rerum. Suscipit,
+            ducimus architecto.</p>
+        <div class="icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+
+        </div>
+        <p class="last">Made with <i class="bi bi-heart"></i>Akshay Kumar </p>
+    </section>
+
+    <!-- external javascript -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
